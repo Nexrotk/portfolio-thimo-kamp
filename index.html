@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thimo Kamp Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Linking of the CSS file -->
+</head>
+<header class="header-bar">
+  <nav>
+  
+    <ul class="navbar">
+     <li> <a href="#projects">projects</a> </li>
+     <li> <a href="#cv">CV</a> </li>
+     <li> <a href="#education" >Education</a> </li>
+     <li> <a href= "#aboutme" >about me</a></li>
+     
+    </ul>
+
+   
+    <li>Thimo Kamp</li>
+    
+
+  </nav>
+</header>
+
+<body>
+ 
+
+<h1><b>Hi, My Name is Thimo Kamp,</b></h1>
+  I am a first-year Software Developer student at Mborijnland in the Netherlands
+</b></p1>
+
+
+<img src="foto/foto portfolio.jpg" class="gezicht foto" alt="gezicht">
+
+<h5 id="projects"><a href="#" class="my-button">View latest projects</a> </h5>
+
+<div>
+  <h4 id="aboutme" class="about-me"><b>About me</b></h4>
+  <p2>Hello there, My name is Thimo Kamp,
+  I am a Dutch 16-year-old 1st-year student at Mborijnland in software development. 
+    I got into software development to help people out with their websites and make them better.</p2>
+    </div>
+    
+
+  <h2 id="education"><b>Education</b></h2>
+  <h3><b>Mborijnland Gouda - 2023-now - Software Developer Level 4 BOL</b></h3>
+  </div>
+
+<footer class="footer">
+<b>follow me! </b>
+  <div class="instagram-logo" href="https://www.instagram.com/thimo_kamp/" target="_blank"><img src="foto/instagram.jpg" alt="Instagram link" class="instagram-logo"></a>
+ <div class="linkedin-logo" href="https://www.linkedin.com/in/thimo-kamp-0122462ab/" target="_blank"><img src="foto/linkedin.png" alt="linkedin" class="linkedin-logo"></a></div>
+</footer>
+
+<script>
+  document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+</script>
+</body>
+</html>
